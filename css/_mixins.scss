@@ -1,0 +1,19 @@
+@mixin light(){
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 300;
+}
+
+@mixin regular(){
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+}
+
+@mixin semibold(){
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+}
+
+@mixin bold(){
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+}
