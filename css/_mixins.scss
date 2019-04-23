@@ -17,3 +17,7 @@
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;
 }
+
+@mixin gradient() {
+  background: linear-gradient(113deg, #8eb574, #709c54);
+}

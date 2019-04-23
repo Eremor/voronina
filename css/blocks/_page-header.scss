@@ -1,0 +1,76 @@
+.page-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.page-header__logo{
+  color: $text-colorlight;
+  @include gradient();
+}
+
+@import "burger";
+
+@import "main-nav";
+
+.page-header__phone{
+  @include semibold();
+  font-size: 18px;
+  color: #3b3b3b;
+}
+
+@media screen and (min-width: $mobile-width) {
+  // временно
+  .page-header{
+    // background-color: red;
+  }
+
+  .page-header__logo{
+    font-size: 8px;
+    padding: 13px 23px;
+    letter-spacing: 5px;
+  }
+
+  .page-header__burger{
+    margin-right: 15px;
+  }
+
+  .page-header__phone{
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .page-header__logo{
+    font-size: 14px;
+    padding: 25px 43px;
+  }
+
+  .page-header__burger{
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .page-header__phone{
+    display: block;
+    width: 307px;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page-header__logo{
+    font-size: 18px;
+    padding: 31px 54px;
+  }
+
+  .page-header__phone{
+    color: #878787;
+    width: 605px;
+    padding-left: 75px;
+  }
+}

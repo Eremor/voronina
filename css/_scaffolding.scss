@@ -1,8 +1,23 @@
 body{
   min-width: $mobile-width;
+  margin: 0;
+  padding: 0;
   @include regular();
   font-size: 14px;
   line-height: 18px;
   color: $text-colordark;
   background-color: $bg-color;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
