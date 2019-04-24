@@ -29,6 +29,10 @@
   }
 }
 
+.burger--closed{
+  position: absolute;
+}
+
 .burger--closed span{
   background-color: transparent;
 
@@ -61,6 +65,16 @@
       background-color: #fff;
     }
   }
+
+  .burger--closed{
+    top: 20px;
+    right: 20px;
+
+    span::before,
+    span::after{
+      background-color: #3b3b3b;
+    }
+  }
 }
 
 @media only screen and (min-width: $tablet-width) {
@@ -78,6 +92,11 @@
       left: 0px;
       background-color: #3b3b3b;
     }
+  }
+
+  .burger--closed{
+    top: 30px;
+    right: 60px;
   }
 }
 
