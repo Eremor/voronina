@@ -1,0 +1,31 @@
+.hero{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.hero__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: $mobile-width) {
+  .hero{
+    background: url(../img/hero_mobile.png) right no-repeat;
+    background-size: cover;
+  }
+
+  .hero__img{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+
+}
+
+@media only screen and (min-width: $desktop-width) {
+
+}
