@@ -110,6 +110,7 @@
     display: block;
     position: relative;
     height: 78px;
+    flex-shrink: 5;
 
     &::before,
     &::after{
