@@ -22,24 +22,9 @@
 }
 
 .hero__btn{
-  background-color: transparent;
-  outline: none;
-  border: none;
   border-bottom: 2px solid #fff;
-  padding: 0 40px 9px 0;
-  text-transform: uppercase;
-  @include semibold();
-  cursor: pointer;
-  position: relative;
 
   &::after{
-    content: '';
-    position: absolute;
-    bottom: 16px;
-    right: 0;
-    display: block;
-    width: 26px;
-    height: 2px;
     background-color: #fff;
   }
 }
@@ -86,7 +71,7 @@
   }
 
   .hero__btn{
-    font-style: 14px;
+    font-size: 14px;
     color: $text-colorlight;
   }
 
