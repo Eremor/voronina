@@ -9,6 +9,14 @@ body{
   background-color: $bg-color;
 }
 
+h1,
+h2,
+h3,
+h4{
+  margin: 0;
+  padding: 0;
+}
+
 ul{
   margin: 0;
   padding: 0;
@@ -24,4 +32,92 @@ a{
 
 button:focus{
   outline: none;
+}
+
+.btn{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0 40px 9px 0;
+  text-transform: uppercase;
+  @include semibold();
+  cursor: pointer;
+  position: relative;
+
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 16px;
+    right: 0;
+    display: block;
+    width: 26px;
+    height: 2px;
+  }
+}
+
+.section-title{
+  position: relative;
+  text-align: center;
+  @include semibold();
+
+  &::after{
+    content: '';
+    display: block;
+    width: 2px;
+    background-color: #cb98a8;
+    position: absolute;
+    left: 50%;
+  }
+
+  &--uppercase{
+    text-transform: uppercase;
+  }
+}
+
+.wripper{
+  min-width: 320px;
+}
+
+@media only screen and (min-width: $mobile-width){
+  .section-title{
+    font-size: 18px;
+
+    &::after{
+      height: 30px;
+      top: -60px;
+    }
+  }
+
+  .wripper{
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: $tablet-width){
+  .section-title{
+    font-size: 24px;
+
+    &::after{
+      height: 40px;
+      top: -110px;
+    }
+  }
+
+  .wripper{
+    max-width: 641px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width){
+  .section-title{
+    font-size: 35px;
+
+    &::after{
+      top: -145px;
+    }
+  }
+
+  .wripper{
+    max-width: 1110px;
+  }
 }

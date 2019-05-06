@@ -1,0 +1,35 @@
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: $mobile-width){
+  .portfolio{
+    padding-top: 140px;
+  }
+
+  .portfolio__title{
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: $tablet-width){
+  .portfolio{
+    padding-top: 265px;
+  }
+
+  .portfolio__title{
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width){
+  .portfolio{
+    padding-top: 285px;
+  }
+
+  .portfolio__title{
+    margin-bottom: 105px;
+  }
+}
